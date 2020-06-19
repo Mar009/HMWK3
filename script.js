@@ -26,20 +26,21 @@ function generatePassword(){
     
  // If Y, then add charLower. If N, then no add
     var lowerCase = prompt("Do you want lower case letters? Yes or No");
+    if(lowerCase == "Yes".toLowerCase){
+      lowerCase+x
+    } else
 
  // If Y, then add CharUpper. If N, then no add
    var upperCase = prompt("Do you want upper case letters? Yes or No");
+   if(upperCase == "No".toLowerCase){
+     upperCase + x
+   }
   
  //If Y, then add Numeric, If N, then no add
    var numbers = prompt("Do you want numbers? Yes or No");
   
  // If Y, then Add special. If N, then no add
    var special = prompt("Do you want special characters? Yes or No");
-
-   if(lowerCase){
-
-   }
-    
 };
 
 // Add event listener to generate button
