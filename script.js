@@ -24,7 +24,7 @@ function generatePassword(){
     var characterAmt = prompt("How many characters? Has to be between 8-128 characters.");
     var x = characterAmt.length
     
- // If Y, then add charLower. If N, then no add
+ // If Y, then add charLower to the character amt?. If N, then no add
     var lowerCase = prompt("Do you want lower case letters? Yes or No");
     if(lowerCase == "Yes".toLowerCase){
       lowerCase+x
