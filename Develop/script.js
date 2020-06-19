@@ -20,22 +20,29 @@ function writePassword() {
 }
 
 function generatePassword(){
- // Prompt for how many characters. between 8-128. V
+ // sets length.
     var characterAmt = prompt("How many characters? Has to be between 8-128 characters.");
+    var x = characterAmt.length
+    
+ // If Y, then add charLower. If N, then no add
+    var lowerCase = prompt("Do you want lower case letters? Yes or No");
 
- // Ask if want lowercase. V
-    var lowerCase = prompt("Do you want lower case letters?");
+ // If Y, then add CharUpper. If N, then no add
+   var upperCase = prompt("Do you want upper case letters? Yes or No");
+  
+ //If Y, then add Numeric, If N, then no add
+   var numbers = prompt("Do you want numbers? Yes or No");
+  
+ // If Y, then Add special. If N, then no add
+   var special = prompt("Do you want special characters? Yes or No");
 
- // Ask if want uppdercase. V
-   var upperCase = prompt("Do you want upper case letters?");
+   if(lowerCase){
 
- // Ask if want numbers. V
-
-   var numbers = prompt("Do you want numbers?");
-
- // ask if want special characters. V
-   var special = prompt("Do you want special characters?")
-}
+   }
+    
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// Time mgmt whomst
